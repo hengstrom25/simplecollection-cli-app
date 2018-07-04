@@ -1,0 +1,1 @@
+# simplecollection-cli-app
