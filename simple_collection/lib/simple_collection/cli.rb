@@ -5,7 +5,7 @@ class CLI
     puts "Welcome to The Simple Collection by Tin Can Knits!"
     start
     until goodbye
-    start
+      start
     end
     puts "Happy Knitting!"
   end
