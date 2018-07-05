@@ -8,5 +8,5 @@ Specs:
 =======
 - [x] Have a CLI for interfacing with the application
 - [x] Pull data from an external source
-- [ ] Implement both list and detail views
+- [x] Implement both list and detail views
 >>>>>>> 80c5b2a627d353718b19b6ba35fdfac0fb5157e0
