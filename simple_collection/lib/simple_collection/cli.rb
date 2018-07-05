@@ -30,7 +30,7 @@ class CLI
 
     pattern = list[input-1]
     pattern.scrape_pattern
-    print_pattern(pattern)
+    pattern.print_pattern(pattern)
   end
 
   def goodbye
@@ -42,24 +42,6 @@ class CLI
       input = gets.strip
     end
     input == "n"
-  end
-
-
-
-  def print_pattern(pattern)
-    puts "--------------------"
-    puts ""
-    puts "#{pattern.name}"
-    puts ""
-    puts "Sizing: #{pattern.size}"
-    puts "Materials: #{pattern.materials}"
-    puts "Gauge: #{pattern.gauge}"
-    puts "Suggested Needles: #{pattern.suggested_needles}"
-    puts "Notes: #{pattern.notes}"
-    puts ""
-    puts "#{pattern.description}"
-    puts "--------------------"
-    puts ""
   end
 
   def print_patterns(list)
