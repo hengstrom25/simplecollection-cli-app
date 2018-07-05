@@ -26,6 +26,22 @@ class Pattern
   def self.all
     @@all
   end
+  
+  def print_pattern(pattern)
+    puts "--------------------"
+    puts ""
+    puts "#{pattern.name}"
+    puts ""
+    puts "Sizing: #{pattern.size}"
+    puts "Materials: #{pattern.materials}"
+    puts "Gauge: #{pattern.gauge}"
+    puts "Suggested Needles: #{pattern.suggested_needles}"
+    puts "Notes: #{pattern.notes}"
+    puts ""
+    puts "#{pattern.description}"
+    puts "--------------------"
+    puts ""
+  end
 
 
 end
