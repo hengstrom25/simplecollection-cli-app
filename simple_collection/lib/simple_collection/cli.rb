@@ -30,7 +30,7 @@ class CLI
 
     pattern = list[input-1]
     pattern.scrape_pattern
-    pattern.print_pattern(pattern)
+    pattern.print_pattern
   end
 
   def goodbye
