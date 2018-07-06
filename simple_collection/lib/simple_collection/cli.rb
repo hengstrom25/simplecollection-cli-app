@@ -29,7 +29,7 @@ class CLI
     end
 
     pattern = list[input-1]
-    pattern.scrape_pattern
+    Scraper.new.scrape_pattern(pattern)
     pattern.print_pattern
   end
 
