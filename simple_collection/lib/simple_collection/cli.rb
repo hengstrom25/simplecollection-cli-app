@@ -1,5 +1,9 @@
 #CLI Controller
 class CLI
+  
+  def initialize
+    @scraper = Scraper.new
+  end
 
   def call
     puts "Welcome to The Simple Collection by Tin Can Knits!"
@@ -18,7 +22,7 @@ class CLI
       input = gets.strip
     end
 
-    list = Scraper.new.scrape_page
+    list = @scraper.scrape_page
     print_patterns(list)
 
     puts "To see more information about a pattern, please enter its number."
@@ -29,7 +33,7 @@ class CLI
     end
 
     pattern = list[input-1]
-    Scraper.new.scrape_pattern(pattern)
+    @scraper.scrape_pattern(pattern)
     pattern.print_pattern
   end
 
